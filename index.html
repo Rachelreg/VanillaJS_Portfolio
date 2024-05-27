@@ -2,8 +2,13 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon porfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <meta
       type="description"
       content="Je vous présente mon premier portfolio en Vanilla JS"
@@ -16,6 +21,26 @@
   </head>
 
   <body>
+    <hearder>
+      <div class="boxed">
+        <div class="flex aligncenter space-between">
+          <button onclick="openMenu()" class="header-menu-mobile">
+            <span class="material-icons">Menu</span>
+          </button>
+          <a href="/" class="header-logo">
+            <img src="img/Logo-RR.png" alt="Logo personnalisé" />
+          </a>
+          <ul class="header-menu">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/">À propos</a></li>
+            <li><a href="/">Compétences</a></li>
+            <li><a href="/">Réalisations</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </hearder>
+
     <div class="slider">
       <img src="img/slider.png" class="slider-background" />
       <div class="slider-content">
@@ -25,11 +50,11 @@
     </div>
     <section class="section">
       <div class="boxed">
-        <div class="flex">
-          <section class="w40">
+        <div class="flex toColumn mCenter">
+          <section class="w40 wm100">
             <h2>À propos de moi</h2>
           </section>
-          <section class="w60">
+          <section class="w60 wm100">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatum sed perspiciatis quasi esse labore deserunt magnam
@@ -44,32 +69,32 @@
     <section class="section dark">
       <div class="boxed text-center">
         <h2>Découvrez mes compétences</h2>
-        <div class="flex gap20">
-          <div class="w25 skill">
+        <div class="flex toColumn gap20">
+          <div class="w25 wm100 skill">
             <img src="./img/logo_html.png" alt="logo html" />
             <h3>HTML5</h3>
           </div>
-          <div class="w25 skill">
+          <div class="w25 wm100 skill">
             <img src="./img/logo_css.png" alt="logo css" />
             <h3>CSS3</h3>
           </div>
-          <div class="w25 skill">
+          <div class="w25 wm100 skill">
             <img src="./img/logo-JS.png" alt="logo javascript" />
             <h3>JAVASCRIPT</h3>
           </div>
-          <div class="w25 skill">
+          <div class="w25 wm100 skill">
             <img src="./img//logo_react.png" alt="logo react" />
             <h3>React</h3>
           </div>
-          <div class="w25 skill">
+          <div class="w25 wm100 skill">
             <img src="./img/logo_nodeJS.png" alt="logo NodeJS" />
             <h3>Node JS</h3>
           </div>
-          <div class="w25 skill">
+          <div class="w25 wm100 skill">
             <img src="./img/logo_SQL.png" alt="logo MySQL" />
             <h3>MySQL</h3>
           </div>
-          <div class="w25 skill">
+          <div class="w25 wm100 skill">
             <img src="./img/logo_windows.png" alt="logo windows" />
             <h3>Windows</h3>
           </div>
@@ -80,45 +105,36 @@
       <div class="boxed text-center">
         <h2>Mes réalisations</h2>
         <div class="flex wrap gap20 space-between">
-          <div class="w32 realisation">
+          <div class="w32 wm48 realisation">
             <a href="/">
-              <img src="./img/projet 1.png" alt="projet 1" />
-              <h3>Jeux de Clic</h3>
+              <img
+                src="./img/projet 1.png"
+                alt="projet BenWîld Clicker"
+                class="img-project"
+              />
+              <h3>Jeux BenWîld Clicker</h3>
             </a>
           </div>
 
-          <div class="w32 realisation">
+          <div class="w32 wm48 realisation">
             <a href="/">
-              <img src="./img/projet 1.png" alt="projet 1" />
-              <h3>À venir</h3>
+              <img
+                src="./img/Front-Wizard.png"
+                alt="projet Front-Wizard"
+                class="img-project"
+              />
+              <h3>Front Wizard</h3>
             </a>
           </div>
 
-          <div class="w32 realisation">
+          <div class="w32 wm48 realisation">
             <a href="/">
-              <img src="./img/projet 1.png" alt="projet 1" />
-              <h3>À venir</h3>
-            </a>
-          </div>
-
-          <div class="w32 realisation">
-            <a href="/">
-              <img src="./img/projet 1.png" alt="projet 1" />
-              <h3>À venir</h3>
-            </a>
-          </div>
-
-          <div class="w32 realisation">
-            <a href="/">
-              <img src="./img/projet 1.png" alt="projet 1" />
-              <h3>À venir</h3>
-            </a>
-          </div>
-
-          <div class="w32 realisation">
-            <a href="/">
-              <img src="./img/projet 1.png" alt="projet 1" />
-              <h3>À venir</h3>
+              <img
+                src="./img/Vert-Saille.png"
+                alt="projet Vert-Saille"
+                class="img-project"
+              />
+              <h3>Vert-Saille</h3>
             </a>
           </div>
         </div>
@@ -128,20 +144,22 @@
     <section class="section dark">
       <div class="boxed text-center">
         <h2>Contactez-moi</h2>
-        <div class="flex space-between">
-          <div class="w32 contact">
+        <div class="flex toColumn space-between mgap20">
+          <div class="w32 wm100 contact">
             <span class="material-icons icon"> mail </span>
             <span class="label">E-mail</span>
             <span class="value">rregulier@hotmail.com</span>
           </div>
 
-          <div class="w32 contact">
-            <span class="material-icons icon"> mail </span>
-            <span class="label">??</span>
-            <span class="value">???</span>
+          <div class="w32 wm100 contact">
+            <span class="material-icons icon"
+              ><img src="./img/icon-linkedin.png" alt="icon LinkedIn"
+            /></span>
+            <span class="label">LinkedIn</span>
+            <span class="value">www.linkedin.com/in/rachel-régulier</span>
           </div>
 
-          <div class="w32 contact">
+          <div class="w32 wm100 contact">
             <span class="material-icons icon"
               ><img src="./img/github-icon.png" alt="icon GitHub"
             /></span>
