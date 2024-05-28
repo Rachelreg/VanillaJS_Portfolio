@@ -129,8 +129,8 @@ p {
 
 .realisation h3 {
   position: absolute;
-  top: 35%;
-  left: 50%;
+  top: 26%;
+  left: 47%;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: 0.4s ease;
@@ -147,8 +147,9 @@ p {
 }
 
 .realisation img {
-  width: 100%;
-  height: 70%;
+  width: 24.4rem;
+
+  height: 13rem;
   object-fit: cover;
   filter: brightness(40%);
   transition: 0.4s ease;
@@ -240,24 +241,25 @@ header {
 
 @media (max-width: 810px) {
   header {
-    height: 70px !important;
+    height: 80px !important;
   }
   .header-menu-mobile {
     display: block;
     border: 0px;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     left: 5%;
-    top: 50%;
+    top: 40px;
     transform: translateY(-50%);
     z-index: 991;
   }
 
   .header-logo {
-    position: absolute;
+    position: relative;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 991;
   }
   .header-menu {
     position: fixed;
@@ -271,6 +273,7 @@ header {
     justify-content: center;
     gap: 30px;
     display: none;
+    z-index: 990;
   }
 
   .active {
@@ -325,6 +328,18 @@ header {
   }
   .boxed {
     max-width: 90%;
+  }
+  .realisation {
+    padding: 50px;
+  }
+  .realisation h3 {
+    font-size: 1.5rem;
+    top: 45%;
+    left: 70%;
+  }
+  .realisation img {
+    width: 70vw;
+    height: 20vh;
   }
 
   .wm48 {
