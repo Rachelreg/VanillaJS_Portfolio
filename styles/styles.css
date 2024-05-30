@@ -56,6 +56,11 @@ p {
   padding: 100px 0;
 }
 
+.section a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .boxed {
   max-width: 1280px;
   margin-inline: auto;
