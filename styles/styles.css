@@ -213,7 +213,7 @@ header {
 }
 
 .header-logo img {
-  width: 100px;
+  width: 150px;
 }
 .header-menu {
   display: flex;
@@ -248,6 +248,7 @@ header {
   header {
     height: 80px !important;
   }
+
   .header-menu-mobile {
     display: block;
     border: 0px;
